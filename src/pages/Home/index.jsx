@@ -1,4 +1,5 @@
 import Card from "../../components/Card";
+import logements from "../../data/logements.json";
 import Banner from "../../assets/Banner_Home.png";
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
         />
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="Home__block-card"></div>
+      <Card logements={logements} />
     </div>
   );
 }
