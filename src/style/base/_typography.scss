@@ -43,6 +43,32 @@
   }
 }
 
+.Error {
+  color: $primary-color;
+  & h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 142.6%;
+  }
+  & p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+  & a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: $primary-color;
+  }
+}
+
 .Footer {
   &__all {
     &-rights {
