@@ -3,12 +3,10 @@ function Card(props) {
   return (
     <div className="Home__container-cards">
       {logements.map((logement) => (
-        <div key={logement.id} className="Home__card">
-          <figure>
-            <img src={logement.cover} alt="lodging picture" />
-            <figcaption>{logement.title}</figcaption>
-          </figure>
-        </div>
+        <figure key={logement.id} className="Home__card">
+          <img src={logement.cover} alt="lodging picture" />
+          <figcaption>{logement.title}</figcaption>
+        </figure>
       ))}
     </div>
   );

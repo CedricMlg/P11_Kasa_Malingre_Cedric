@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/LOGO.svg";
+import Logo from "../../assets/logo-header.svg";
 
 function Header() {
   return (
-    <div className="Header">
+    <header className="Header">
       <div className="Header__block-logo">
         <Link to="/">
           <img className="Header__logo" src={Logo} alt="Logo kasa" />
@@ -19,7 +19,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 

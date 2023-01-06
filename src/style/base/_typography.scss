@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.Header {
+  &__nav {
+    & ul {
+      & li {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        & a {
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.Home {
+  &__block {
+    &-banner {
+      & h1 {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #ffff;
+      }
+    }
+  }
+  &__card {
+    & figcaption {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 142.6%;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.Footer {
+  &__all {
+    &-rights {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 142.6%;
+      color: #ffff;
+    }
+  }
+}
