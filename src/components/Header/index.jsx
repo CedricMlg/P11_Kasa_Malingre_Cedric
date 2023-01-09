@@ -5,7 +5,7 @@ import Logo from "../../assets/logo-header.svg";
 const NavUnlisted = styled.ul`
   .current {
     li {
-      border-bottom: 2px solid black;
+      text-decoration-line: underline;
     }
   }
 `;
@@ -20,10 +20,10 @@ function Header() {
       </div>
       <nav className="Header__nav">
         <NavUnlisted>
-          <NavLink to="/" activeClassName="current" exact>
+          <NavLink to="/" className={({isActive}) => (isActive ? 'current' : null)} exact>
             <li>ACCUEIL</li>
           </NavLink>
-          <NavLink to="/a-propos" activeClassName="current" exact>
+          <NavLink to="/a-propos" className={({isActive}) => (isActive ? 'current' : null)} exact>
             <li>A PROPOS</li>
           </NavLink>
         </NavUnlisted>
