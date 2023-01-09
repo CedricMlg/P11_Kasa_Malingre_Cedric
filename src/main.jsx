@@ -17,7 +17,7 @@ root.render(
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/fiche-logement" element={<FicheLogement />} />
+        <Route exact path="/logement/:id" element={<FicheLogement />} />
         <Route exact path="/a-propos" element={<APropos />} />
         <Route exact path="*" element={<Error />} />
       </Routes>
@@ -25,3 +25,5 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
+// let { id } = useParams();

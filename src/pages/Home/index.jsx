@@ -1,21 +1,25 @@
 import Card from "../../components/Card";
 import logements from "../../data/logements.json";
-import Banner from "../../assets/Banner_Home.png";
+import banner from "../../assets/Banner_Home.png";
 
 function Home() {
   return (
-    <div className="Home">
-      <figure className="Home__block-banner">
+    <div className="home">
+      <figure className="home__block-banner">
         <img
-          className="Home__banner"
-          src={Banner}
+          className="home__banner"
+          src={banner}
           alt="Banner of the home page"
         />
         <figcaption>
           <h1>Chez vous, partout et ailleurs</h1>
         </figcaption>
       </figure>
-      <Card logements={logements} />
+      <div className="home__container-cards">
+        {logements.map((logement) => (
+          <Card key={logement.id} logement={logement} />
+        ))}
+      </div>
     </div>
   );
 }

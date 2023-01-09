@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Logo from "../../assets/logo-header.svg";
+import logo from "../../assets/logo-header.svg";
 
 const NavUnlisted = styled.ul`
   .current {
@@ -12,18 +12,24 @@ const NavUnlisted = styled.ul`
 
 function Header() {
   return (
-    <header className="Header">
-      <div className="Header__block-logo">
+    <header className="header">
+      <div className="header__block-logo">
         <NavLink to="/">
-          <img className="Header__logo" src={Logo} alt="Logo kasa" />
+          <img className="header__logo" src={logo} alt="Logo kasa" />
         </NavLink>
       </div>
-      <nav className="Header__nav">
+      <nav className="header__nav">
         <NavUnlisted>
-          <NavLink to="/" className={({isActive}) => (isActive ? 'current' : null)} exact>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "current" : null)}
+          >
             <li>ACCUEIL</li>
           </NavLink>
-          <NavLink to="/a-propos" className={({isActive}) => (isActive ? 'current' : null)} exact>
+          <NavLink
+            to="/a-propos"
+            className={({ isActive }) => (isActive ? "current" : null)}
+          >
             <li>A PROPOS</li>
           </NavLink>
         </NavUnlisted>

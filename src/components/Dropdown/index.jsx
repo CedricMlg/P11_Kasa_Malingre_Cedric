@@ -1,20 +1,23 @@
 import { useState } from "react";
-import Arrow from "../../assets/Arrow_Select.svg";
+import arrow from "../../assets/Arrow_Select.svg";
 
 function Dropdown(props) {
-  const rules = props.rules;
-  const dropdown = rules.map((rule) => (
-    <div key={rule.id} className="A-propos__dropdown">
-      <div className="A-propos__dropdown-title">
-        <p>{rule.title}</p>
-        <button onClick={() => (rule.isOpen === false ? true : false)}>
-          <img src={Arrow} alt="Open dropdown" />
+  const prop = props.props;
+  const [isOpen, setIsOpen] = useState(true);
+  return (
+    <div className="dropdown">
+      <div className="dropdown-title">
+        <p>{prop.title}</p>
+        <button
+          style={isOpen ? {} : { transform: "rotate(0deg)" }}
+          onClick={() => setIsOpen(isOpen === false ? true : false)}
+        >
+          <img src={arrow} alt="Open dropdown" />
         </button>
       </div>
-      {rule.isOpen ? "" : <p>{rule.description}</p>}
+      {isOpen ? "" : <p className="dropdown-description">{prop.description}</p>}
     </div>
-  ));
-  return <div className="A-propos__container-dropdowns">{dropdown}</div>;
+  );
 }
 
 export default Dropdown;

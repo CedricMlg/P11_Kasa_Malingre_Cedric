@@ -1,8 +1,8 @@
 function Tag(tags) {
   return (
-    <div className="Fiche-logement__container-tags">
+    <div className="fiche-logement__container-tags">
       {tags.map((tag) => (
-        <div className="Fiche-logement__tag">{tag}</div>
+        <div className="tag">{tag}</div>
       ))}
     </div>
   );
