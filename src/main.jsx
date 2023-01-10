@@ -25,5 +25,3 @@ root.render(
     </Router>
   </React.StrictMode>
 );
-
-// let { id } = useParams();

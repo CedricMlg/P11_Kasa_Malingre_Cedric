@@ -1,6 +1,19 @@
 import { useState } from "react";
 import arrow from "../../assets/Arrow_Select.svg";
 
+function handleEquipment(equipments) {
+  return (
+    <div className="dropdown__container-description">
+      {" "}
+      {equipments.map((equipment, index) => (
+        <p key={index} className="dropdown-description">
+          {equipment}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function Dropdown(props) {
   const prop = props.props;
   const [isOpen, setIsOpen] = useState(true);
@@ -15,7 +28,13 @@ function Dropdown(props) {
           <img src={arrow} alt="Open dropdown" />
         </button>
       </div>
-      {isOpen ? "" : <p className="dropdown-description">{prop.description}</p>}
+      {isOpen ? (
+        ""
+      ) : Array.isArray(prop.description) ? (
+        handleEquipment(prop.description)
+      ) : (
+        <p className="dropdown-description">{prop.description}</p>
+      )}
     </div>
   );
 }

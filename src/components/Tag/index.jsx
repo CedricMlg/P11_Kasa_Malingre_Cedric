@@ -1,11 +1,6 @@
-function Tag(tags) {
-  return (
-    <div className="fiche-logement__container-tags">
-      {tags.map((tag) => (
-        <div className="tag">{tag}</div>
-      ))}
-    </div>
-  );
+function Tag(props) {
+  const tag = props.props;
+  return <div className="tag">{tag}</div>;
 }
 
 export default Tag;
