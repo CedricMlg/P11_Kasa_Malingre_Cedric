@@ -1,7 +1,14 @@
 import logements from "../../data/logements.json";
 import Dropdown from "../../components/Dropdown";
+import Star from "../../components/Star";
 import Tag from "../../components/Tag";
 import { useParams } from "react-router-dom";
+
+function handleRating(rating) {
+  const stars = ["empty", "empty", "empty", "empty", "empty"];
+  stars.fill("full", 0, rating);
+  return stars;
+}
 
 function FicheLogement() {
   let { id } = useParams();
@@ -15,6 +22,7 @@ function FicheLogement() {
   description.description = logement.description;
   equipement.title = "Équipements";
   equipement.description = logement.equipments;
+  const starsArray = handleRating(logement.rating);
   return (
     <div className="logement">
       <div className="logement__carousel"></div>
@@ -26,7 +34,11 @@ function FicheLogement() {
         ))}
       </div>
       <div className="logement__container-rating/host">
-        <div className="logement__container-stars"></div>
+        <div className="logement__container-stars">
+          {starsArray.map((star, index) => (
+            <Star key={index} props={star} />
+          ))}
+        </div>
         <div className="logement__container-host">
           <p>{host.name}</p>
           <img src={host.picture} alt="Host picture" />
