@@ -6,9 +6,9 @@ function Star(props) {
   return (
     <div className="star">
       {star === "full" ? (
-        <img src={fullStar} alt="Empty star" />
+        <img src={fullStar} alt="Full star" />
       ) : (
-        <img src={emptyStar} alt="Full star" />
+        <img src={emptyStar} alt="Empty star" />
       )}
     </div>
   );

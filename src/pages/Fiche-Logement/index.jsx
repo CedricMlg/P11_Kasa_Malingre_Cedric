@@ -1,4 +1,5 @@
 import logements from "../../data/logements.json";
+import Carousel from "../../components/Carousel";
 import Dropdown from "../../components/Dropdown";
 import Star from "../../components/Star";
 import Tag from "../../components/Tag";
@@ -25,7 +26,7 @@ function FicheLogement() {
   const starsArray = handleRating(logement.rating);
   return (
     <div className="logement">
-      <div className="logement__carousel"></div>
+      <Carousel porps={logement.pictures} />
       <div className="logement__title">{logement.title}</div>
       <div className="logement__location">{logement.location}</div>
       <div className="logement__container-tags">
