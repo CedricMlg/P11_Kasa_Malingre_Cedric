@@ -26,7 +26,7 @@ function FicheLogement() {
   const starsArray = handleRating(logement.rating);
   return (
     <div className="logement">
-      <Carousel porps={logement.pictures} />
+      <Carousel props={logement.pictures} />
       <div className="logement__title">{logement.title}</div>
       <div className="logement__location">{logement.location}</div>
       <div className="logement__container-tags">
