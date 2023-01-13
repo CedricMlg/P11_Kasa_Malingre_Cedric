@@ -27,14 +27,14 @@ function FicheLogement() {
   return (
     <div className="logement">
       <Carousel props={logement.pictures} />
-      <div className="logement__title">{logement.title}</div>
-      <div className="logement__location">{logement.location}</div>
+      <h1 className="logement__title">{logement.title}</h1>
+      <h2 className="logement__location">{logement.location}</h2>
       <div className="logement__container-tags">
         {tags.map((tag, index) => (
           <Tag key={index} props={tag} />
         ))}
       </div>
-      <div className="logement__container-rating/host">
+      <div className="logement__container-rating-host">
         <div className="logement__container-stars">
           {starsArray.map((star, index) => (
             <Star key={index} props={star} />
@@ -42,7 +42,9 @@ function FicheLogement() {
         </div>
         <div className="logement__container-host">
           <p>{host.name}</p>
-          <img src={host.picture} alt="Host picture" />
+          <div className="logement__container-host-picture">
+            <img src={host.picture} alt="Host picture" />
+          </div>
         </div>
       </div>
       <div className="logement__container-dropdowns">

@@ -1,6 +1,6 @@
 .carousel {
   width: auto;
-  height: 200px;
+  height: 255px;
   position: relative;
   margin: 0;
   & img {
@@ -16,7 +16,7 @@
     width: 100%;
     & p {
     position: absolute;
-      margin: 8% 0 0 0;
+      margin: 15% 0 0 0;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -29,7 +29,7 @@
       background-color: transparent;
       border: none;
       & img {
-        transform: scale(0.5);
+        transform: scale(0.3);
       }
     }
   }

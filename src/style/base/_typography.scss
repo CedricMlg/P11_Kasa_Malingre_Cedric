@@ -44,6 +44,45 @@
   }
 }
 
+.logement {
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: $primary-color;
+  }
+  &__location {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: $primary-color;
+  }
+  & .tag {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 142.6%;
+    color: white;
+  }
+  &__container {
+    &-host {
+      & p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
 .carousel {
   & p {
     font-family: "Montserrat", sans-serif;
