@@ -15,7 +15,7 @@
     transform: translate(0, -50%);
     width: 100%;
     & p {
-    position: absolute;
+      position: absolute;
       margin: 50px 0 0 0;
       left: 50%;
       transform: translate(-50%, 0);
@@ -30,6 +30,36 @@
       border: none;
       & img {
         transform: scale(0.3);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    height: 300px;
+    & figcaption {
+      & p {
+        margin: 70px 0 0 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel {
+    height: 415px;
+    & figcaption {
+      & p {
+        margin: 120px 0 0 0;
+      }
+    }
+    &__arrows {
+      & button {
+        padding: 0 20px;
+        & img {
+          transform: scale(0.8);
+        }
       }
     }
   }

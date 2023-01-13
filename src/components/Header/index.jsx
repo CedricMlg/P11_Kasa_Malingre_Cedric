@@ -24,13 +24,13 @@ function Header() {
             to="/"
             className={({ isActive }) => (isActive ? "current" : null)}
           >
-            <li>ACCUEIL</li>
+            <li>Accueil</li>
           </NavLink>
           <NavLink
             to="/a-propos"
             className={({ isActive }) => (isActive ? "current" : null)}
           >
-            <li>A PROPOS</li>
+            <li>A Propos</li>
           </NavLink>
         </NavUnlisted>
       </nav>
