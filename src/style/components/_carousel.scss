@@ -19,6 +19,7 @@
       margin: 50px 0 0 0;
       left: 50%;
       transform: translate(-50%, 0);
+      display: none;
     }
   }
   &__arrows {
@@ -44,6 +45,7 @@
     & figcaption {
       & p {
         margin: 70px 0 0 0;
+        display: block;
       }
     }
   }
