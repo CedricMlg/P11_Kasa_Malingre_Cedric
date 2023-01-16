@@ -32,6 +32,9 @@
         transform: scale(0.3);
       }
     }
+    &.hide {
+      display: none;
+    }
   }
 }
 

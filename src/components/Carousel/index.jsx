@@ -22,7 +22,7 @@ function Carousel(props) {
     <figure className="carousel">
       <img src={pictures[currentIndex]} alt="Picture of the lodging" />
       <figcaption>
-        <div className="carousel__arrows">
+        <div className={`carousel__arrows ${pictures.length === 1 ? "hide" : ""}`}>
           <button className="carousel__prevPicture" onClick={goToPrev}>
             <img src={arrowPrev} alt="Previous picture" />
           </button>
