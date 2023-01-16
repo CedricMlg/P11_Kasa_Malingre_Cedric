@@ -12,10 +12,27 @@
   }
   & p {
     margin: 0 0 46px 0;
+    & span {
+      display: block;
+    }
   }
   & a {
     position: absolute;
     bottom: 254px;
     margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .error {
+    & p {
+      margin: 0 0 260px 0;
+      & span {
+        display: inline;
+      }
+    }
+    & a {
+      bottom: 80px;
+    }
   }
 }
