@@ -6,16 +6,25 @@ import Tag from "../../components/Tag";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
+/**
+ * If the rating is 3, then fill the first 3 elements of the array with the string "full" and return
+ * the array.
+ * @returns An array of 5 elements, with the first rating elements being "full" and the rest being
+ * "empty".
+ */
 function handleRating(rating) {
   const stars = ["empty", "empty", "empty", "empty", "empty"];
   stars.fill("full", 0, rating);
   return stars;
 }
 
+/* A function that is returning a component. */
 function FicheLogement() {
   let { id } = useParams();
   const array = logements.filter((logement) => logement.id === id);
 
+/* Checking if the array is empty. If it is, it will redirect to the 404 page. If it is not, it will
+display the page. */
   if (array.length === 0) {
     const navigate = useNavigate();
 

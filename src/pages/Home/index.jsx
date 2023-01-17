@@ -2,6 +2,7 @@ import Card from "../../components/Card";
 import logements from "../../data/logements.json";
 import banner from "../../assets/Banner_Home.png";
 
+/* A function that returns a JSX element. */
 function Home() {
   return (
     <div className="home">

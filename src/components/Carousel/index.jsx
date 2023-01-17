@@ -2,6 +2,12 @@ import { useState } from "react";
 import arrowPrev from "../../assets/carousel-arrow-prev.svg";
 import arrowNext from "../../assets/carousel-arrow-next.svg";
 
+/**
+ * The Carousel function is a React component that takes in an array of pictures as a prop and displays
+ * the first picture in the array. It also has two buttons that allow the user to navigate through the
+ * pictures in the array.
+ * @returns A React component
+ */
 function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const pictures = props.props;

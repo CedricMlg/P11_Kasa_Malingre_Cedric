@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-footer.svg";
 
+/**
+ * It returns a footer element with a div and a p element inside it.
+ * @returns A footer with a logo and a copyright notice.
+ */
 function Footer() {
   return (
     <footer className="footer">

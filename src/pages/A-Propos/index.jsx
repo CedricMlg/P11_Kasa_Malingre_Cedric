@@ -2,6 +2,7 @@ import Dropdown from "../../components/Dropdown";
 import Banner from "../../assets/Banner_APropos.png";
 import rules from "../../data/rules.json";
 
+/* A function that returns a JSX element. */
 function APropos() {
   return (
     <div className="a-propos">

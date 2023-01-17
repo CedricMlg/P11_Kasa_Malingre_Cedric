@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+/* A function that returns a div with the className "error" and the content of the div. */
 function Error() {
   return (
     <div className="error">

@@ -11,6 +11,7 @@ import Error from "./pages/Error";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
+/* It's rendering the app. */
 root.render(
   <React.StrictMode>
     <Router>

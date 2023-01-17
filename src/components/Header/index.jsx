@@ -10,6 +10,7 @@ const NavUnlisted = styled.ul`
   }
 `;
 
+/* A function that returns a header. */
 function Header() {
   return (
     <header className="header">

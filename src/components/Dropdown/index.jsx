@@ -1,6 +1,11 @@
 import { useState } from "react";
 import arrow from "../../assets/Arrow_Select.svg";
 
+/**
+ * This function takes an array of strings and returns a div with a paragraph for each string in the
+ * array.
+ * @returns An array of JSX elements.
+ */
 function handleEquipment(equipments) {
   return (
     <div className="dropdown__container-description">
@@ -14,6 +19,7 @@ function handleEquipment(equipments) {
   );
 }
 
+/* A function that is being called in the parent component. */
 function Dropdown(props) {
   const prop = props.props;
   const [isOpen, setIsOpen] = useState(true);
