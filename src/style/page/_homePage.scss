@@ -1,6 +1,6 @@
 .home {
   width: 89.5%;
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   min-height: 65%;
   &__block {
     &-banner {
@@ -42,8 +42,7 @@
 @media (min-width: 1024px) {
   .home {
     &__banner {
-      object-fit: none;
-      object-position: 100% 80%;
+      object-fit: cover;
       border-radius: 25px;
     }
     &__block {
@@ -51,8 +50,10 @@
         height: 223px;
         border-radius: 25px;
         & h1 {
-          width: 100%;
-          left: 10%;
+          width: fit-content;
+          white-space: nowrap;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -63,6 +64,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    &__container {
+      &-cards {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

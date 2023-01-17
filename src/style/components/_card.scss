@@ -18,8 +18,14 @@
   }
   & figcaption {
     position: absolute;
-    top: 189px;
+    top: 70%;
     left: 20px;
     width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    height: 340px;
   }
 }
